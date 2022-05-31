@@ -14,6 +14,7 @@ require"mqttOutMsg"
 require"mqttInMsg"
 --加载setApn功能测试模块
 require "setApn"
+
 local ready = false
 
 --- MQTT连接是否处于激活状态
@@ -39,9 +40,12 @@ sys.taskInit(
                 local imei = misc.getImei()
                 local iccid = sim.getIccid()
                 --创建一个MQTT客户端
-                local mqttClient = mqtt.client(imei.."_"..iccid, 1200, "test", "test")
+                local mqttClient = mqtt.client(imei.."_"..iccid,600,"user","password")
+
                 --阻塞执行MQTT CONNECT动作，直至成功
-                if mqttClient:connect("lbsmqtt.airm2m.com", 1883, "tcp") then
+                --如果使用ssl连接，打开mqttClient:connect("lbsmqtt.airm2m.com",1884,"tcp_ssl",{caCert="ca.crt"})，根据自己的需求配置
+                --mqttClient:connect("lbsmqtt.airm2m.com",1884,"tcp_ssl",{caCert="ca.crt"})
+                if mqttClient:connect("lbsmqtt.airm2m.com",1884,"tcp") then
                     retryConnectCnt = 0
                     ready = true
                     --订阅主题
