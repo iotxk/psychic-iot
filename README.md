@@ -4,12 +4,20 @@
 通过2G/4G通信模块，接收、发送手机SIM短信，转发到 微信、Telegram
 # 硬件设备选型
 合宙 Air600c 4G通信模块，目前官方搞活动 19.9元
+
+官方购买地址：
+【淘宝】https://m.tb.cn/h.fGHdNpS?tk=cxUA2Ocxshg「合宙4G Cat.1通信模块全网通小开发板Air600C完全兼容移远EC600N」
+点击链接直接打开
+
 产品介绍：
 https://zhuanlan.zhihu.com/p/477840337
+
 文档地址：
 https://doc.openluat.com/wiki/21?wiki_page_id=2987#_16
+
 视频教程：
 https://www.bilibili.com/video/BV1aY4y1W7fx/
+
 
 
 # 技术实现
