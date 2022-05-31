@@ -30,3 +30,8 @@ https://www.bilibili.com/video/BV1aY4y1W7fx/
 自动接听语音电话播放留言
 语音电话录音
 ....
+
+## License
+
+psychic-sms is available under the
+[MIT license](https://opensource.org/licenses/MIT)
