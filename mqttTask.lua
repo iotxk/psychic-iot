@@ -24,8 +24,6 @@ function isReady()
 end
 
 
-sys.timerStart(sys.restart, 1000*60*60*1, 'deviceRestart')
--- sys.timerStart(sys.restart('设备定时重启'), 1000*60*60*2)
 --启动MQTT客户端任务
 sys.taskInit(
     function()
