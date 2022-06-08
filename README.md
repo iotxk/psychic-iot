@@ -19,10 +19,21 @@ https://doc.openluat.com/wiki/21?wiki_page_id=2987#_16
 视频教程：
 https://www.bilibili.com/video/BV1aY4y1W7fx/
 
+# 使用说明
+扫码关注微信公众号，扫一扫 添加绑定您的设备。
+
+<img src="https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png" width="400">
+
+
+
+下载我们编译好的固件，通过观看视频教程，烧录固件。
+
+烧录成功后，通电开机有微信通知，如正常收到提示，则配置成功！
+
 
 
 # 技术实现
-通信模块设备，使用MQTT 订阅 发布 与服务端通信，有任务上报给服务端，服务端 接收到任务后，转发到 微信、Telegram 等应用。
+通信模块设备，使用MQTT 订阅 发布 与服务端通信，有任务上报给服务端，服务端 接收到任务后，转发到 微信、Telegram、Email 等应用。
 
 # 已实现功能
 短信转发
