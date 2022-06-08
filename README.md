@@ -22,7 +22,7 @@ https://www.bilibili.com/video/BV1aY4y1W7fx/
 # 使用说明
 扫码关注微信公众号，扫一扫 添加绑定您的设备。
 
-<img src="https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png?1" width="400">
+<img src="https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png?100" width="400">
 
 
 
