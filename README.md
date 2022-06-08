@@ -3,6 +3,20 @@
 此仓库为通信模块 合宙 Air600c 烧录固件。
 通过2G/4G通信模块，接收、发送手机SIM短信，转发到 微信、Telegram。
 
+
+# 使用说明
+扫码关注微信公众号，扫一扫 添加绑定您的设备。
+
+<img src="https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png" width="400">
+
+![Image text](https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png)
+
+下载我们编译好的固件，通过观看视频教程，烧录固件。
+
+烧录成功后，通电开机有微信通知，如正常收到提示，则配置成功！
+
+
+
 # 硬件设备选型
 合宙 Air600c 4G通信模块，目前官方搞活动 19.9元
 
@@ -18,19 +32,6 @@ https://doc.openluat.com/wiki/21?wiki_page_id=2987#_16
 
 视频教程：
 https://www.bilibili.com/video/BV1aY4y1W7fx/
-
-# 使用说明
-扫码关注微信公众号，扫一扫 添加绑定您的设备。
-
-<img src="https://cdn-1308171970.cos.ap-beijing.myqcloud.com/statics/mpqrcode.png" width="400">
-
-
-
-下载我们编译好的固件，通过观看视频教程，烧录固件。
-
-烧录成功后，通电开机有微信通知，如正常收到提示，则配置成功！
-
-
 
 # 技术实现
 通信模块设备，使用MQTT 订阅 发布 与服务端通信，有任务上报给服务端，服务端 接收到任务后，转发到 微信、Telegram、Email 等应用。
