@@ -7,9 +7,7 @@
 # 使用说明
 扫码关注微信公众号，扫一扫 添加绑定您的设备。
 
-<img src="https://github.com/iotxk/psychic-iot/raw/main/mpqrcode.png" width="400">
-
-![Image text](https://github.com/iotxk/psychic-iot/raw/main/mpqrcode.png)
+![微信公众号](https://github.com/iotxk/psychic-iot/raw/main/mpqrcode.png)
 
 下载我们编译好的固件，通过观看视频教程，烧录固件。
 
