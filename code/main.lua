@@ -5,9 +5,10 @@ PROJECT = "SMS-AIR600C"
 VERSION = "2.0.0"
 
 --加载日志功能模块，并且设置日志输出等级
---如果关闭调用log模块接口输出的日志，等级设置为log.LOG_SILENT即可
+--如果关闭调用log模块接口输出的日志，等级设置为 log.LOG_SILENT 即可
 require "log"
-LOG_LEVEL = log.LOGLEVEL_TRACE
+-- LOG_LEVEL = log.LOGLEVEL_TRACE
+LOG_LEVEL = log.LOG_SILENT
 --[[
 如果使用UART输出日志，打开这行注释的代码"--log.openTrace(true,1,115200)"即可，根据自己的需求修改此接口的参数
 如果要彻底关闭脚本中的输出日志（包括调用log模块接口和Lua标准print接口输出的日志），执行log.openTrace(false,第二个参数跟调用openTrace接口打开日志的第二个参数相同)，例如：

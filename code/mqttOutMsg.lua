@@ -27,15 +27,13 @@ local function procnewsms(from,message,datetime)
     log.info("testSms.procnewsms",from,message,datetime)
     local imei = misc.getImei()
     local iccid = sim.getIccid()
-    insertMsg("/receivesms",json.encode({from=from,imei=imei,iccid=iccid,datetime=datetime, message=common.gb2312ToUtf8(message)}),0 ,{cb=pubQos0TestCb})
+    insertMsg("/sms/upload",json.encode({from=from,imei=imei,iccid=iccid,datetime=datetime, message=common.gb2312ToUtf8(message)}),0 ,{cb=pubQos0TestCb})
 end
 
 sms.setNewSmsCb(procnewsms)
 
 function pubQos0Test()
-    local imei = misc.getImei()
-    local iccid = sim.getIccid()
-    insertMsg("/receivesms",json.encode({from=iccid,imei=imei,iccid=iccid, message=iccid}),0 ,{cb=pubQos0TestCb})
+    procnewsms(iccid, iccid)
 end
 --- 初始化“MQTT客户端数据发送”
 -- @return 无
@@ -43,8 +41,6 @@ end
 function init()
     pubQos0Test()
 end
-
-
 --- 去初始化“MQTT客户端数据发送”
 -- @return 无
 -- @usage mqttOutMsg.unInit()

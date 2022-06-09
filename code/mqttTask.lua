@@ -50,9 +50,7 @@ sys.taskInit(
                     ready = true
                     --订阅主题
                     if mqttClient:subscribe({
-                        [string.format("/command/%s/task", iccid)]=0,
-                        [string.format("/command/%s/status", iccid)] = 1}) then
-
+                        [string.format("/command/%s/task", iccid)]=0}) then
                         mqttOutMsg.init()
                         --循环处理接收和发送的数据
                         while true do
