@@ -9,7 +9,7 @@
 
 ![微信公众号](https://github.com/iotxk/psychic-iot/raw/main/img/mpqrcode.png)
 
-下载我们编译好的固件，通过观看视频教程，烧录固件。
+下载我们编译好的固件 [固件列表](https://github.com/iotxk/psychic-iot/releases)，通过观看视频教程，烧录固件。
 
 烧录成功后，通电开机有微信通知，如正常收到提示，则配置成功！
 
